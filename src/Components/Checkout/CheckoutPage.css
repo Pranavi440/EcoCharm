@@ -1,0 +1,100 @@
+.checkout-page {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+.form-control {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #ff7e5f; /* Highlight on focus */
+    box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+}
+
+.checkout-button {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Stylish gradient */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Full width */
+}
+
+.checkout-button:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f); /* Reversed gradient for hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.checkout-button:active {
+    transform: translateY(2px); /* Button press effect */
+}
+
+.checkout-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+.selected-items {
+    margin-bottom: 30px; /* Space between items and form */
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Space between items */
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.item-image {
+    width: 50px; /* Thumbnail size */
+    height: auto;
+    margin-right: 15px; /* Space between image and text */
+}
+
+.item-details p {
+    margin: 5px 0; /* Space between lines */
+}
+
+.total-price {
+    font-weight: bold;
+    margin-top: 10px; /* Space above total */
+}

@@ -3,7 +3,7 @@ import Popular from '../Components/Popular/Popular';
 import NewCollections from '../Components/NewCollections/NewCollections';
 import NewsLetter from '../Components/NewsLetter/NewsLetter';
 import data_product from '../Components/Assets/data'; // Import your product data
-import '../Pages/CSS/Shop.css';
+
 const Shop = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState(data_product); // Initialize state with all products
@@ -23,15 +23,13 @@ const Shop = () => {
 
   return (
     <div>
-      <div className="search-container">
-        <input
-          type="text"
-          placeholder="Search for products..."
-          value={searchTerm}
-          onChange={handleSearch}
-          className="search-input" // You can style this class in your CSS
-        />
-      </div>
+      <input
+        type="text"
+        placeholder="Search for products..."
+        value={searchTerm}
+        onChange={handleSearch}
+        className="search-input" // You can style this class in your CSS
+      />
       <Popular products={limitedProducts} /> {/* Pass the limited products */}
       <NewCollections />
       <NewsLetter />

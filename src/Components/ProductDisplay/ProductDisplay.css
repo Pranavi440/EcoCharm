@@ -4,6 +4,12 @@
     gap: 40px;
     justify-content: space-between;
 }
+
+.productdisplay-buttons {
+    display: flex;
+    gap: 10px; /* Add space between the buttons */
+}
+
 .productdisplay-left{
     display: flex;
     gap: 18px;

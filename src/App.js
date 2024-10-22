@@ -5,6 +5,8 @@ import Shop from './Pages/Shop';
 import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
+import Wishlist from './Pages/Wishlist';
+import Checkout from  './Components/Checkout/CheckoutPage';
 import LoginSignup from './Pages/LoginSignup';
 import Footer from './Components/Footer/Footer';
 import exfoliators_banner from './Components/Assets/banner_exfoliators.jpeg'
@@ -35,7 +37,9 @@ function App() {
           <Route path=':productId' element={<Product/>}/>
         </Route>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/wishlist' element={<Wishlist/>}/>
         <Route path='/login' element={<LoginSignup/>}/>
+        <Route path="/checkout" element={<Checkout/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>

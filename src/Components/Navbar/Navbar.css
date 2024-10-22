@@ -1,9 +1,10 @@
+
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 1px 3px -2px black;
-    padding: 15px 70px;
+    padding: 15px 20px;
 }
 .nav-logo{
     display: flex;
@@ -82,6 +83,20 @@
 }
 .nav-dropdown{
     display: none;
+}
+/* For wishlist icon */
+.nav-wishlist-count {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: -25px; /* Adjust positioning similarly to the cart icon */
+    font-size: 14px;
+    background: red;
+    color: white;
 }
 
 /* -------- media query---------- */
